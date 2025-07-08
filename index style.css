@@ -1,7 +1,30 @@
 @charset "utf-8";
 h1{
-	margin-top: 0px;
+	text-align: right;
+	direction: rtl;
+	
 }
 body{ 
-	background: silver;
+	background:#4C5008
+}
+.container{
+	width: 1100px;
+	height: auto;
+	margin: auto;
+}
+.images{
+	float: right;
+	margin-bottom: 20px;
+	margin: 10px;
+	height: auto;
+	width: 500px;
+	border-radius: 10px;
+}
+.vid{
+	width: 500px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	
 }
