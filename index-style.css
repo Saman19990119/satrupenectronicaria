@@ -1,0 +1,50 @@
+@charset "utf-8";
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+  background: silver;
+}
+h1, h3 { text-align: right; color: dimgray; direction: rtl; }
+
+.imgcontainer, .vid {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* نسبت 16:9 */
+}
+.video-wrapper video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 🌓 ریسپانسیو برای موبایل */
+@media (max-width : 1006px ){
+  .gallery img {
+    width: calc(50% - 10px);
+    height: auto;
+  }
+}
